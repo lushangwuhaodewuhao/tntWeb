@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/aboutus.css"/>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	</head>
+
+	<body>
+		<div class="common-wrapper">
+			<div class="local">
+				<ul class="local-on">
+					<li>关于我们</li>
+					<li>关于我们></li>
+					<li>首页></li>
+					<li>当前位置:&nbsp;</li>
+				</ul>
+			</div>
+			<div class="common-title"><img src="img/about_us.png" </div>
+			</div>
+			<div class="common-content">
+				<div class="common-left">
+					<div class="common-nav company-nav">
+						<div class="other-active"><a>关于我们</a></div>
+						<div><a>招贤纳士</a></div>
+						<div><a>联系我们</a></div>
+					</div>
+					<div class="contact-box">
+						<div class="other-active">联系方式</div>
+						<div>电话：</div>
+						<div>邮箱：</div>
+						<div>地址：</div>
+					</div>
+				</div>
+				<ul class="common-list company-for">
+					<li class="list-detail aboutus company">
+
+						<h2>关于我们</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail recruitment company">
+
+						<h2>招贤纳士</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail contactus company">
+
+						<h2>联系我们</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+
+				</ul>
+
+			</div>
+	</body>
+	<script>
+		$(document).ready(function() {
+
+			$(".company-nav div").click(function() {
+				var l = $(".company-nav").children("div").length;
+				var x = $(this).index();
+				if(x == 2) {
+					for(var j = 0; j < l; j++) {
+						$(".company-for .company").eq(j).css({
+							"display": "none"
+						});
+						$(".company-for .company").eq(2).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 1) {
+					for(var j = 0; j < l; j++) {
+						$(".company-for .company").eq(j).css({
+							"display": "none"
+						});
+						$(".company-for .company").eq(1).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 0) {
+					for(var j = 0; j < l; j++) {
+						$(".company-for .company").eq(j).css({
+							"display": "none"
+						});
+						$(".company-for .company").eq(0).css({
+							"display": "block"
+						})
+					}
+				}
+
+				var l = $(".company-nav").children("div").length;
+				for(var i = 0; i < l; i++) {
+					$(".company-nav div").eq(i).removeClass("other-active");
+					$(".company-nav div").eq(i).addClass("other-default");
+
+				}
+				$(this).addClass("other-active");
+
+			});
+		})
+	</script>
+
+</html>

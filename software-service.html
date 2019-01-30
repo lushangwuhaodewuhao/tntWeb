@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="stylesheet" type="text/css" href="css/solution.css" />-->
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/software_service.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<title>
+		</title>
+	</head>
+
+	<body>
+		<div class="common-wrapper">
+			<div class="local">
+				<ul class="local-on">
+					<li>软件使用</li>
+					<li>软件服务></li>
+					<li>首页></li>
+					<li>当前位置:&nbsp;</li>
+				</ul>
+			</div>
+			<div class="common-title"><img src="img/software_service.png" </div>
+			</div>
+			<div class="common-content">
+				<div class="common-left">
+					<div class="common-nav software-for-jquery">
+						<div class="other-active"><a>软件使用</a></div>
+						<div><a>软件开发服务</a></div>
+						<div><a>农业安防监控</a></div>
+						<div><a>技术咨询服务</a></div>
+						<div><a>技术支持服务</a></div>
+					</div>
+					<div class="contact-box">
+						<div class="other-active">联系方式</div>
+						<div>电话：</div>
+						<div>邮箱：</div>
+						<div>地址：</div>
+					</div>
+				</div>
+				<ul class="common-list service-list">
+					<li class="list-detail software-use technology-service">
+
+						<h2>软件使用</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail software-develop technology-service">
+
+						<h2>软件开发服务</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail secure-control technology-service">
+
+						<h2>农业安防监控</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail technology-consulting technology-service">
+
+						<h2>技术咨询服务</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail technology-support  technology-service">
+
+						<h2>技术支持服务</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+				</ul>
+
+	</body>
+	<script>
+		$(document).ready(function() {
+
+			$(".software-for-jquery div").click(function() {
+				var l = $(".software-for-jquery").children("div").length;
+				var x = $(this).index();
+				if(x == 4) {
+					for(var j = 0; j < l; j++) {
+						$(".service-list .technology-service").eq(j).css({
+							"display": "none"
+						});
+						$(".service-list .technology-service").eq(4).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 3) {
+					for(var j = 0; j < l; j++) {
+						$(".service-list .technology-service").eq(j).css({
+							"display": "none"
+						});
+						$(".service-list .technology-service").eq(3).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 2) {
+					for(var j = 0; j < l; j++) {
+						$(".service-list .technology-service").eq(j).css({
+							"display": "none"
+						});
+						$(".service-list .technology-service").eq(2).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 1) {
+					for(var j = 0; j < l; j++) {
+						$(".service-list .technology-service").eq(j).css({
+							"display": "none"
+						});
+						$(".service-list .technology-service").eq(1).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 0) {
+					for(var j = 0; j < l; j++) {
+						$(".service-list .technology-service").eq(j).css({
+							"display": "none"
+						});
+						$(".service-list .technology-service").eq(0).css({
+							"display": "block"
+						})
+					}
+				}
+
+				var l = $(".software-for-jquery").children("div").length;
+				for(var i = 0; i < l; i++) {
+					$(".software-for-jquery div").eq(i).removeClass("other-active");
+					$(".software-for-jquery div").eq(i).addClass("other-default");
+
+				}
+				$(this).addClass("other-active");
+
+			});
+		})
+	</script>
+
+</html>

@@ -1,0 +1,88 @@
+html,
+body,
+ul,
+ol,
+li,
+p,
+div{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	list-style-type: none;
+}
+
+.foot {
+	padding-top: 68px;
+	width: 100%;
+	height: auto;
+	background-color: #000000;
+	color: white;
+}
+
+.foot-wrapper {
+	overflow: hidden;
+	width: 900px;
+	margin: auto;
+}
+
+.friendship-link {
+	float: left;
+	width: 23%;
+	height: auto;
+}
+
+.friendship-link li {
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	
+}
+.friendship-link li a{
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	display: block;
+}
+.friendship-link li a:hover{
+	cursor: pointer;
+	color: #5BB531;
+}
+.contact-us {
+	float: left;
+	width: 43%;
+	height: auto;
+}
+
+.contact-us li {
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	height: auto;
+}
+.qr-code{
+	float: left;
+	width: 33%;
+	height: auto;
+}
+.qr-code li{
+	width: 100%;
+	height: auto;
+}
+.qr-code img{
+	width:200px;
+	height:200px;
+	margin-top: 20px;
+}
+.copyright-messege{
+	
+	margin-top: 10px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	overflow: hidden;
+}
+.copyright-messege a{
+	
+	color: white;
+}

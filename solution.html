@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>解決方案</title>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<link rel="stylesheet" href="css/solution.css" />
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+
+	<body>
+		<div class="common-wrapper">
+			<div class="local">
+				<ul class="local-on">
+					<li>农产品投入监管</li>
+					<li>解决方案></li>
+					<li>首页></li>
+					<li>当前位置:&nbsp;</li>
+				</ul>
+			</div>
+			<div class="common-title"><img src="img/solution_project.jpg" </div>
+			</div>
+			<div class="common-content">
+				<div class="solution-left common-left">
+					<div class="solution-nav common-nav">
+						<div class="other-active">
+							<a>农业投入品监管</a>
+						</div>
+						<div>
+							<a>农产品质量溯源系统</a>
+						</div>
+						<div>
+							<a>农业物联网智能控制方案</a>
+						</div>
+						<div>
+							<a>食品药品安全智慧监管系统</a>
+						</div>
+						<div>
+							<a>智能农业物联网监管系统</a>
+						</div>
+					</div>
+					<div class="contact-box">
+						<div class="other-active">联系方式</div>
+						<div>电话：</div>
+						<div>邮箱：</div>
+						<div>地址：</div>
+
+					</div>
+				</div>
+				<ul class="common-list solution-list">
+					<li class="list-detail afri-surpevice solution">
+						<h2>农业投入品监管</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail agri-Traceability solution">
+
+						<h2>农产品质量溯源系统</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail agri-control solution">
+
+						<h2>农业物联网智能控制方案</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail drug-surpevise solution">
+
+						<h2>食品药品安全智慧监管系统</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+					<li class="list-detail intelligent-agri solution">
+						<h2>智能农业物联网监管系统</h2>
+						<p>啊说得好胜利法啊身份卡会受到法律的舒服啦还是客服上班</p>
+
+					</li>
+				</ul>
+
+			</div>
+	</body>
+	<script>
+		$(document).ready(function() {
+
+			$(".solution-nav div").click(function() {
+				var l = $(".solution-nav").children("div").length;
+				var x = $(this).index();
+				if(x == 4) {
+					for(var j = 0; j < l; j++) {
+						$(".solution-list .solution").eq(j).css({
+							"display": "none"
+						});
+						$(".solution-list .solution").eq(4).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 3) {
+					for(var j = 0; j < l; j++) {
+						$(".solution-list .solution").eq(j).css({
+							"display": "none"
+						});
+						$(".solution-list .solution").eq(3).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 2) {
+					for(var j = 0; j < l; j++) {
+						$(".solution-list .solution").eq(j).css({
+							"display": "none"
+						});
+						$(".solution-list .solution").eq(2).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 1) {
+					for(var j = 0; j < l; j++) {
+						$(".solution-list .solution").eq(j).css({
+							"display": "none"
+						});
+						$(".solution-list .solution").eq(1).css({
+							"display": "block"
+						})
+					}
+				}
+				if(x == 0) {
+					for(var j = 0; j < l; j++) {
+						$(".solution-list .solution").eq(j).css({
+							"display": "none"
+						});
+						$(".solution-list .solution").eq(0).css({
+							"display": "block"
+						})
+					}
+				}
+
+				var l = $(".solution-nav").children("div").length;
+				for(var i = 0; i < l; i++) {
+					$(".solution-nav div").eq(i).removeClass("other-active");
+					$(".solution-nav div").eq(i).addClass("other-default");
+
+				}
+				$(this).addClass("other-active");
+
+			});
+		})
+	</script>
+
+</html>
